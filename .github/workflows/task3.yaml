@@ -2,7 +2,7 @@ name: Task 3 - Scheduled Build
 
 on:
   schedule:
-    - cron: '10 17 * * *'  # Runs daily at midnight UTC
+    - cron: '15 14 * * *'  # Runs daily at midnight UTC
 
 jobs:
   scheduled-job:
