@@ -1,0 +1,16 @@
+name: Task 3 - Scheduled Build
+
+on:
+  schedule:
+    - cron: '10 17 * * *'  # Runs daily at midnight UTC
+
+jobs:
+  scheduled-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print message
+        run: echo "Scheduled build completed successfully!"
